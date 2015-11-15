@@ -1,0 +1,14 @@
+[user]
+	name = eichisanden
+	email = 
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+	safecrlf = true
+[merge]
+	ff = false
+[push]
+	default = upstream
+[pull]
+	rebase = preserve

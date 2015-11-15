@@ -1,0 +1,11 @@
+*~
+*.class
+*.jasper
+*.log
+*.swp
+.DS_Store
+
+pid
+
+log/
+
