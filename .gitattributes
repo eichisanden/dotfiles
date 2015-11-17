@@ -18,6 +18,7 @@
 *.less          text
 *.log           text
 *.md            text
+*.original      text
 *.php           text
 *.pl            text
 *.pm            text
@@ -30,6 +31,7 @@
 *.sql           text
 *.styl          text
 *.svg           text
+*.tag           text
 *.tld           text
 *.tsv           text
 *.txt           text
