@@ -4,8 +4,8 @@
 [color]
 	ui = auto
 [core]
-	autocrlf = input
-	safecrlf = true
+	autocrlf = false
+	eol = lf
 [merge]
 	ff = false
 [push]
