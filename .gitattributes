@@ -1,50 +1,50 @@
-*.bat           text
-*.css           text
-*.coffee        text
-*.csv           text
-*.df            text
-*.dicon         text
-*.ejs           text
-*.haml          text
-*.htm           text
-*.html          text
-*.jade          text
-*.java          text
-*.jrxml         text
-*.js            text
-*.json          text
-*.jsp           text
-*.jspf          text
-*.less          text
-*.log           text
-*.md            text
-*.original      text
-*.php           text
-*.pl            text
-*.pm            text
-*.properties    text
-*.py            text
-*.rb            text
-*.sass          text
-*.scss          text
-*.sh            text
-*.sql           text
-*.styl          text
-*.svg           text
-*.tag           text
-*.tld           text
-*.tsv           text
-*.txt           text
-*.wsdl          text
-*.xml           text
-*.yml           text
-*.yaml          text
-.gitattributes  text
-.gitconfig      text
-.gitignore      text
-.htaccess       text
-LICENSE         text
-AUTHORS         text
+*.bat           text eol=lf
+*.css           text eol=lf
+*.coffee        text eol=lf
+*.csv           text eol=lf
+*.df            text eol=lf
+*.dicon         text eol=lf
+*.ejs           text eol=lf
+*.haml          text eol=lf
+*.htm           text eol=lf
+*.html          text eol=lf
+*.jade          text eol=lf
+*.java          text eol=lf
+*.jrxml         text eol=lf
+*.js            text eol=lf
+*.json          text eol=lf
+*.jsp           text eol=lf
+*.jspf          text eol=lf
+*.less          text eol=lf
+*.log           text eol=lf
+*.md            text eol=lf
+*.original      text eol=lf
+*.php           text eol=lf
+*.pl            text eol=lf
+*.pm            text eol=lf
+*.properties    text eol=lf
+*.py            text eol=lf
+*.rb            text eol=lf
+*.sass          text eol=lf
+*.scss          text eol=lf
+*.sh            text eol=lf
+*.sql           text eol=lf
+*.styl          text eol=lf
+*.svg           text eol=lf
+*.tag           text eol=lf
+*.tld           text eol=lf
+*.tsv           text eol=lf
+*.txt           text eol=lf
+*.wsdl          text eol=lf
+*.xml           text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+.gitattributes  text eol=lf
+.gitconfig      text eol=lf
+.gitignore      text eol=lf
+.htaccess       text eol=lf
+LICENSE         text eol=lf
+AUTHORS         text eol=lf
 
 *.class         binary
 *.dll           binary
