@@ -1,0 +1,47 @@
+\set QUIET 1
+
+-- Determines which letter case to use when completing an SQL key word.
+\set COMP_KEYWORD_CASE upper
+
+-- Sets the string to be printed in place of a null value.
+\pset null (null)
+
+-- yyyy/MM/dd hh:mm:ss [host]:port user@db transaction \n lineno=#
+\set PROMPT1 '%[%033[38;2;132;160;198m%]%`date "+%Y/%m/%d %H:%M:%S"` %M:%> %n@%/%x%[%033[0m%]\n%l%R%# '
+-- lineno=#
+\set PROMPT2 '%l%R%# '
+
+-- Sets or toggles expanded table formatting mode. As such it is equivalent to \pset expanded.
+\x auto
+
+--
+\setenv PAGER less
+-- nowrap
+\setenv LESS -S
+
+-- Sets the border line drawing style
+\pset linestyle unicode
+\pset unicode_header_linestyle double
+
+-- Verbose error reports.
+\set VERBOSITY verbose
+
+-- Display how long each SQL statement takes, in milliseconds.
+--\timing on
+
+-- Errors are only ignored in interactive sessions
+\set ON_ERROR_ROLLBACK interactive
+
+-- Process stop immediately after an error.
+\set ON_ERROR_STOP on
+
+-- Use a separate history file per-database.
+\set HISTFILE ~/.psql_history- :DBNAME
+
+-- When this variable is set to on and a backslash command queries the database.
+\set ECHO_HIDDEN 1
+
+\set sp 'SHOW search_path;'
+
+\unset QUIET
+
