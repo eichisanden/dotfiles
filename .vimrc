@@ -107,38 +107,35 @@ imap <c-k> <UP>
 imap <c-l> <Right>
 
 "---------------------------
-" Start Neobundle Settings.
+" Start dein Settings.
 "---------------------------
-" bundleで管理するディレクトリを指定
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible
+endif
+" Add the dein installation directory into runtimepath
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
-"
-" neobundle自体をneobundleで管理
-NeoBundleFetch 'Shougo/neobundle.vim'
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
 
-" NERDTreeを設定
-NeoBundle 'scrooloose/nerdtree'
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('Shougo/deoplete.nvim')
+  if !has('nvim')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
+  endif
 
-NeoBundle 'Townk/vim-autoclose'
+  " install my plugins ("call dein#install()")
+  call dein#add('cohama/lexima.vim') "auto close parentheses
+  call dein#add('scrooloose/nerdtree') "file explorer
+  map <C-e> :NERDTreeToggle<CR> "short cut for nerdtree
 
-" powerline
-NeoBundle 'alpaca-tc/alpaca_powertabline'
-"NeoBundle 'https://github.com/Lokaltog/powerline.git'
-NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
-NeoBundle 'Lokaltog/powerline-fontpatcher'
+  call dein#end()
+  call dein#save_state()
+endif
 
-call neobundle#end()
-
-" Required:
 filetype plugin indent on
-
-
-" 未インストールのプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
-" 毎回聞かれると邪魔な場合もあるので、この設定は任意です。
-NeoBundleCheck
-
+syntax enable
 "-------------------------
-" End Neobundle Settings.
+" End dein Settings.
 "-------------------------
