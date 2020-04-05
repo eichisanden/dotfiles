@@ -116,8 +116,6 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 
 export PGDATA=/usr/local/var/postgres
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 # rbenv
 export PATH=$HOME/.rbenv/shims:$PATH
 eval "$(rbenv init -)"
@@ -125,4 +123,6 @@ eval "$(rbenv init -)"
 export PATH=~/src/gae/google-cloud-sdk/bin:$PATH
 export PATH=~/Library/Android/sdk/platform-tools/:$PATH
 
+# anyenv
+eval "$(anyenv init -)"
 
