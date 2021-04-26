@@ -123,3 +123,8 @@ export PATH=~/Library/Android/sdk/platform-tools/:$PATH
 # anyenv
 eval "$(anyenv init -)"
 
+# nodenv
+#export PATH="$HOME/.nodenv/bin:$PATH"
+## may be unneed
+#eval "$(nodenv init -)"
+
