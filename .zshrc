@@ -128,3 +128,6 @@ eval "$(anyenv init -)"
 ## may be unneed
 #eval "$(nodenv init -)"
 
+# use homebrew python version
+export PATH=/usr/local/opt/python@3.9/libexec/bin/:$PATH
+
