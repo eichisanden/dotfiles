@@ -1,3 +1,6 @@
+# path
+export PATH="/opt/homebrew/bin/:$PATH"
+
 # compinit
 fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
 autoload -Uz compinit
